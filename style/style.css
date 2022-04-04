@@ -1,0 +1,99 @@
+body {
+    background: #363534
+}
+
+h1 {
+    color: #fff;
+}
+
+.square-one {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: square-one;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    
+    border: none;
+}
+
+
+@keyframes square-one {
+    0% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: lime;
+        left: 500px;
+        top: 0px;
+    }
+    50% {
+        background: orange;
+        left: 500px;
+        top: 500px;
+        border-radius: 50%;
+    }
+    75% {
+        background: dodgerblue;
+        left: 500px;
+        top: 0px;
+    }
+    100% {
+        background: blue;
+        left: 0px;
+        top: 0px;
+    }
+}
+ 
+.square-two {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: relative;
+    animation-name: square-two;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: backwards;
+    border: none;
+    animation-fill-mode: forwards;
+}
+
+@keyframes square-two {
+    0% {
+        background: blue;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background: dodgerblue;
+        left: 0px;
+        top: 500px;
+    }
+    50% {
+        background: orangered;
+        left: 500px;
+        top: 500px;
+        border-radius: 50%;
+    }
+    75% {
+        background: lime;
+        left: 0px;
+        top: 500px;
+    }
+    100% {
+        background: red;
+        left: 0px;
+        top: 0px;
+    }
+}
+
